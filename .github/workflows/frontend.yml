@@ -51,7 +51,7 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ##################################### 
+            ${{secrets.DOCKER_HUB_USERNAME}}/pfs_lab6:latest 
       
       #Przenies cache'a
       - name: Move cache
